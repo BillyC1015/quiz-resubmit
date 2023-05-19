@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=1 , initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>Time Left: <span id="timer"></span></h2>
+    <!-- Start Quiz Button -->
+    <button class="start_btn">Start Quiz</button>
+
+    <!-- Info Box -->
+    <div class="info_box"></div>
+    <div class="info_title">
+        <span>Some Rules of this Quiz</span>
+        <div class="info_list"></div>
+        <div class="info">1. You will have <span>30 seconds</span> to complete this quiz.</div>
+        <div class="info">2. You cannot select another answer after your initial selection.</div>
+        <div class="info">3. If you answer incorrectly you will lose <span>10 seconds</span> from your total time.</div>
+        <div class="info">4. Once you start the quiz you cannot exit.</div>
+        <div class="info">5. Each correct answer will give you 1 point.</div>
+    </div>
+    <div class="questions hide">
+        <div id="title"></div>
+        <div id="options"></div>
+    </div>
+    <div id="endScreen" class="hide">
+        <h2>All done!</h2>
+        <h3>You final score is: <span id= "finalScore"></span></span></h3>
+    <input type="text" id="userName" placeholder="Your name here">
+    <button id="submit">Submit</button>
+    </div>
+    <div id="scorePage" class="hide">
+    <h2>High Scores</h2>
+    <ol id= "highScores"></ol>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
